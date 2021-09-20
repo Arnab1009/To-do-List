@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <span class="callsign">To do List</span>
+    </div>
+
+    <div id="formContent">
+      <div class="container">
+        <h2 id="formHeader" class="textCenter">Enter your tasks</h2>
+        <div id="formContainer">
+          <form id="inputForm" onsubmit="event.preventDefault(); createTask();">
+            <input
+              id="taskCollector"
+              placeholder="Enter to-do item"
+              type="text"
+              required
+            />
+            <input type="submit" id="submitBtn" value="Create Item" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="taskContent">
+      <div class="container">
+        <ul id="listCollector">
+          <li class="listItem">
+            <span class="task" onclick="markItem(this)"
+              ><strong>List Item</strong></span
+            >
+            <span class="deleteTask" onclick="deleteItem(this)">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

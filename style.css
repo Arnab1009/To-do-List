@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+form {
+  margin: 0 auto;
+}
+
+#header {
+  margin: 0px;
+  background-color: #d8d8d8;
+  padding: 12px;
+}
+
+#formHeader {
+  font-family: "Lobster Two", cursive;
+  margin: 10px 0px;
+}
+
+#taskCollector {
+  border: 1px solid gray;
+  border-radius: 5px;
+  min-width: 500px;
+  min-height: 20px;
+  padding: 5px;
+  color: grey;
+}
+
+#submitBtn {
+  padding: 8px;
+  font-size: 15px;
+  background-color: #4b8a08;
+  color: ivory;
+  border: 1px solid #4b8a08;
+  border-radius: 4px;
+  min-width: 100px;
+}
+
+#inputForm input {
+  display: block;
+  margin: 10px auto;
+}
+
+#formContent {
+  padding: 20px;
+  background: rgb(214, 214, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 214, 221, 1) 0%,
+    rgba(212, 212, 223, 1) 27%,
+    rgba(164, 175, 177, 1) 61%
+  );
+}
+
+#listCollector {
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+}
+
+.callsign {
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.listItem {
+  background-color: #848484;
+  min-height: 20px;
+  padding: 10px;
+  border: 1px solid #848484;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.listItem:hover {
+  background-color: ivory;
+  color: black;
+}
+
+.listItem:hover span {
+  background-color: ivory;
+}
+
+.task {
+  min-width: 95%;
+  float: left;
+}
+
+.deleteTask {
+  float: right;
+}
+
+.markComplete {
+  text-decoration: line-through;
+  background-color: #d8d8d8;
+}
